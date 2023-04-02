@@ -1,4 +1,4 @@
-let para = document.getElementById("para");
+let sentence = document.getElementById("sentence");
 let textArea = document.getElementById("textarea");
 let startBtn = document.getElementById("start-btn");
 let doneBtn = document.getElementById("done-btn");
@@ -26,10 +26,10 @@ let arr = [
 ];
 
 startBtn.addEventListener("click", function () {
-  let getpara = Math.floor(Math.random() * arr.length);
-  para.innerHTML = arr[getpara];
-  para.style.display = "block";
-  actualwords = arr[getpara].split(" ");
+  let getSentence = Math.floor(Math.random() * arr.length);
+  sentence.innerHTML = arr[getSentence];
+  sentence.style.display = "block";
+  actualwords = arr[getSentence].split(" ");
   let date = new Date();
   startTime = date.getTime();
   textArea.disabled = false;
@@ -43,7 +43,7 @@ startBtn.addEventListener("click", function () {
 doneBtn.addEventListener("click", function () {
   doneBtn.style.display = "none";
   startBtn.style.display = "block";
-  para.style.display = "none";
+  sentence.style.display = "none";
   let date = new Date();
   endTime = date.getTime();
   let userword = textArea.value.trim().split(" ");
