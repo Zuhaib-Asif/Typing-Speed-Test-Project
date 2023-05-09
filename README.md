@@ -1,3 +1,6 @@
+# Preview Live Site:
+https://zuhaib-asif.github.io/Typing-Speed-Test-Project/
+
 # Typing Speed Test
 
 This project is a typing speed test that allows users to test their typing speed.
